@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="title" placeholder="Co mam do zrobienia...">
+        <select id="priority">
+            <option selected value="1">bardzo ważne</option>
+            <option value="2">ważne</option>
+            <option value="3">na spokojnie</option>
+            
+        </select>
+        <span id="addBtn" class="addBtn">Dodaj</span>
+        <span id="clearBtn" class="clearBtn">Wyczyść</span>
+    </div>
+
+    <div id="empty-list">Wygląda na to, że nie ma nic do zrobienia :)</div>
+    <div id="countNumber">Masz <span id="count"> </span> <span id="task"> </span> do zrobienia :)</div>
+    
+    <ul id="list" data-todo="1">
+        
+    </ul>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>    
+</body>
+</html>
